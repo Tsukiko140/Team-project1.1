@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kachin Manaw Festival</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Sevillana&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="/images/pjlogo.jpg"
+      type="image.jpg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+       header {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0px); /* Optional blur if the image quality is very bad */
+    z-index: -1; /* Make sure it's behind the content */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    .navbar {
+        position: absolute; /* Keep the navbar on top of the carousel */
+        width: 100%;
+        z-index: 1; /* Ensure the navbar is above the carousel */
+    }
+
+
+.logo {position: relative;
+      width: 98%;
+      height: 100vh;
+      margin: 0 5vw 2vw 3vw;
+      overflow: hidden;
+
+    }
+    
+    .logo {
+      border-radius: 50%;
+     top: 2.5vw;
+      margin-left: 30px;
+      position: fixed;
+      margin-left: 5vw;
+      z-index: 1000;
+      max-width: 10%;
+      max-height: 20%;
+    }
+   
+    ul {
+      list-style-type: none;
+      top: 3vw;
+      margin-left: 200px;
+      position: fixed;
+      z-index: 1000;
+      
+    }
+    li {
+      display: inline-block;
+      list-style-type: none;
+      background-color: #161D6f;
+    color: #fff;
+      padding: 5px 15px 5px 15px;
+      border-radius: 50px;
+      margin-top: 10px;
+      margin-right:10px;
+      font-weight: bold;
+      
+    }
+    .nav-link {
+      color: whitesmoke;
+    }
+    
+   
+
+    .search-container {
+      position: fixed;
+      right: 2px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 50px;
+      padding: 5px;
+      margin: 15px;
+      padding: 0;
+      z-index: 1000;
+
+    }
+
+    .search-input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      width: 150px;
+      font-size: 16px;
+      border-radius: 25px;
+    }
+
+    .search-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0 10px;
+      margin: 0;
+    }
+
+    .search-icon {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .search-btn:hover .search-icon {
+      color: #007bff;
+    }
+    li:hover {
+      background-color: whitesmoke;
+      color: black;
+    }
+    
+    
+    .dropdown-item:hover {
+      color: rgb(36, 15, 226);
+
+    }
+    @media (max-width: 768px) {
+      pre {
+        font-size: 25px;
+        text-align: center;
+      }
+      ul {
+        margin-left: 50px;
+      }
+    }
+    /*pine end*/
+    .interactive-aside {
+    width: 90%;                   /* Adjust the width as needed (25% is a good starting point) */
+    padding: 15px;               /* Add padding for inner spacing */
+    background-color: #f9f9f9;   /* Light background color for contrast */
+    border-radius: 5px;          /* Rounded corners */
+    transition: transform 0.3s;   /* Smooth transition for hover effect */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    height: auto;                /* Let height adjust to content */
+    max-height: 1000px;            /* Optional: set a maximum height for long content */
+    overflow-y: auto;            /* Scroll if content exceeds max-height */
+    overflow-y: auto;}
+
+.interactive-aside:hover {
+    transform: translateY(-10px); /* Move up on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+    .content-wrapper {
+    display: flex;                /* Use flexbox for layout */
+    justify-content: space-between;  /* Space between the elements */
+    margin: 20px;               /* Add some margin */
+}
+
+aside {
+    width: 25%;                 /* Set a width for the aside */
+    padding: 15px;             /* Add padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 5px;        /* Rounded corners */
+    
+}
+
+section {
+    width: 70%;                 /* Set a width for the section */
+    padding: 15px;             /* Add padding */
+    background-color: #fff;    /* White background for section */
+    border-radius: 5px;        /* Rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack elements on smaller screens */
+    }
+    
+    aside, section {
+        width: 100%;           /* Full width on mobile */
+    }
+}
+header {
+            position: relative;
+            width: 100%;
+            height: 550px;
+            overflow: hidden;
+        }
+
+        header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out; /* Add transition for smooth fade */
+        }
+
+        header img.active {
+            opacity: 1; /* Only the active image should be visible */
+        }
+
+        .navbar {
+            position: absolute; /* Keep the navbar on top of the carousel */
+            width: 100%;
+            z-index: 1; /* Ensure the navbar is above the carousel */
+        }
+
+        .carousel-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .control {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .control.active {
+            opacity: 1; /* Highlight the active control */
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar Start-->
+        <!--Logo-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <img src="/images/pjlogo.jpg" class="logo" alt="Destino" width="100px" height="100px">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a>
+              </li>
+          <!-- Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Where to go
+            </a>
+            <ul class="dropdown-menu">
+              <!-- Initially visible items -->
+              <a class="dropdown-item" href="#">Yangon Region</a>
+              <a class="dropdown-item" href="#">Mandalay Region</a>
+              <a class="dropdown-item" href="#">Sagaing Region</a>
+              <a class="dropdown-item" href="#">Bago Region</a>
+              <a class="dropdown-item" href="#">Ayeyarwady</a>
+               <!-- Initially hidden items -->
+              <div id="moreRegions" style="display: none;">
+              <a class="dropdown-item" href="/C++/Web Application Development/images-island/Tanintharyi.html">Tanintharyi Region</a>
+              <a class="dropdown-item" href="#">Magway Region</a>
+              <a class="dropdown-item" href="#">Kachin State</a>
+              <a class="dropdown-item" href="#">Kayin State</a>
+              <a class="dropdown-item" href="#">Kayar State</a>
+              <a class="dropdown-item" href="#">Chin State</a>
+              <a class="dropdown-item" href="#">Mon State</a>
+              <a class="dropdown-item" href="#">Shan State</a>
+              <a class="dropdown-item" href="#">Rakhine State</a>
+            </div>
+            <!-- Show More button -->
+            <button type="button" class="dropdown-item text-primary" id="showMoreBtn" onclick="showMore()">Show More...</button>
+          </ul>
+        </li>
+    <script>
+          function showMore() {
+            const moreRegions = document.getElementById('moreRegions');
+            const showMoreBtn = document.getElementById('showMoreBtn');
+        
+            // Toggle the visibility of the hidden regions
+            if (moreRegions.style.display === 'none') {
+              moreRegions.style.display = 'block';  // Show the hidden regions
+              showMoreBtn.textContent = 'Show Less...';  // Change button text
+            } else {moreRegions.style.display = 'none';  // Hide the regions again
+          showMoreBtn.textContent = 'Show More...';  // Reset button text
+        }
+      }
+    </script>
+    <!--Events & Festival-->
+          <li class="nav-item">
+            <a class="nav-link" href="/files/moon festival.html">Events & Festival</a>
+          </li>
+          <!--About Us-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+    <!--Search box-->
+        <form class="d-flex">
+          <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass" style="padding-left: 5px;"></i>
+            <input 
+              type="text"
+              placeholder="Search..."
+              class="search-input"
+            />
+            <button class="search-btn" type="submit">
+            </button>
+          </div>
+        </form>
+        </ul>
+        </div>
+        </div>
+        </nav>
+        
+        <!--Navigation Bar End-->
+        <header>
+             <!-- Header Carousel -->
+    <div class="header-carousel">
+      <img src="/images/kachin-manaw 1.jpg" alt="Festival background 1" class="active" height="-1800px" width="1000px">
+      <img src="/images/kachin manaw dance.jpeg" alt="Festival background 2"height="1500px">
+      <img src="/images/Kachin-Manaw-3.jpg" alt="Festival background 3">
+
+      <div class="carousel-controls">
+          <div class="control" onclick="showSlide(0)"></div>
+          <div class="control" onclick="showSlide(1)"></div>
+          <div class="control" onclick="showSlide(2)"></div>
+      </div>
+  </div>
+</header>   
+            
+        </header>
+        
+        <div class="content-wrapper">
+        <aside >
+
+        <h2>Contents </h2>
+        <div class="interactive-aside"> <a href="#section1">Manaw Festival </a></div>
+        <div class="interactive-aside"><a href="#section2">Types of Manaw</a></div>
+        <div class="interactive-aside"><a href="#section3">Transportation</a></div>
+        <div class="interactive-aside"><a href="#section4">Rest area</a></div>
+    </aside>
+    <section>
+        <h1>Kachin Manaw Festival</h1>
+    
+            <h4 id="section1">What is Kachin Manaw Festival?</h4>
+        <p>Manaw Festival (Burmese: မနောပွဲ, Jinghpaw: Manau Poi) is an annual traditional dance festival celebrated by Kachin people. Mostly held at Myitkyina, Kachin State also known as မနောမြေ( Manaw Land ) in Myanmar and also celebrated by Kachin people around the world. Manaw is the largest festival in Myitkyina, held at the beginning of January. Manaw Festival is the most significant event for Kachin People. Tribes of Kachin gather together in Manaw ground and dance around the erected Manaw poles. According to the professional narrators of Kachin traditional folktale (Jaiwa,Dumsa), for the Kachin people, the Kachin Manau is initiated by birds for the Kachin people. 'From Wikipedia' </p>
+        <img src="/images/kachin-manaw 1.jpg" alt="Kachin" width="100%" height="25%" style="padding:30px;">
+            <h4 id="section2">What is the purpose of Manaw Dance and How many type are there?</h4>
+            <p>Manaw dance is celebrated only on the five most important occasions.
+
+                1.To celebrate victory in war.
+                2.To gather the clans to meet and settle accounts, make plans for the future.
+                3.To commemorate the death of an elder.
+                4.For a housewarming.
+                5.To bring good fortune to new farmlands and cultivation.
+                There are originally 14 types of Manaw. They are
+                
+                1. Sut Manau, 2. Kumran Manau, 3.Ninghtan Manau, 4.Padang Manau, 5.Ju Manau, 6.Htingram Manau, 7.Ningshawn Manau, 8.Kumrum Manau, 9.Nausawt Manau, 10.Htinghtang Manau, 11.HKridip Manau, 12. Roidu kaput Manau, 13.Hkindu tep Manau, and 14.Sha Dip Hpawt Manau.'From Wikipedia'</p>
+                <img src="/images/kachin manaw2.jpg" alt="Kachin dance" width="100%" height="25%" style="padding:30px;">
+                
+                <h4 id="section3">How to get there?</h4>
+            <p>It can be reached by air to Myitkyina from Yangon and Mandalay. The charter boat trip along the Ayeyarwaddy River on the way back to Mandalay is unforgettable.'From Asiatour'</p>
+           
+            <h4 id="section4">Where can stay? </h4> 
+            <p>Only 2-3* hotels are available in this remote area, but you will be provided to stay at the best available hotels in MYITKYINA and guest house in INDAWGYI LAKE by our arrangement.
+                Road Condition to INDAWGYI Lake and MYITSON is bumpy.
+                Recommended Short Program (which should be combined with your choice of tour).'From Asia tour'</p>
+            </section></div></body>
+            <!DOCTYPE html>
+        
+
+       
+
+    <script>
+        // Image slider for the header
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.header-carousel img');
+        const controls = document.querySelectorAll('.control');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            controls[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            controls[currentSlide].classList.add('active');
+        }
+
+        // Show More function for dropdown
+        function showMore() {
+            const moreRegions = document.getElementById('moreRegions');
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            if (moreRegions.style.display === "none") {
+                moreRegions.style.display = "block";
+                showMoreBtn.textContent = "Show Less...";
+            } else {
+                moreRegions.style.display = "none";
+                showMoreBtn.textContent = "Show More...";
+            }
+        }
+    </script>
+</body>
+</html>
+

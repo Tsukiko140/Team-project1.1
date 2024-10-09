@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destino</title>
+    <!-- homepage header -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Sevillana&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="/images/pjlogo.jpg"
+      type="image.jpg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- silsection -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="/images/Screenshot 2024-09-13 142916.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" />
+
+    <style>
+    /* homepageheader */
+    header {
+     position: relative;
+     width: 100%;
+     height: 550px;
+     overflow:hidden;
+     }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/images/background1.jpg");
+      background-size: cover;
+      background-position: center;
+      filter: blur(3px); /* Apply blur to background */
+      z-index: -1; /* Make sure it's behind content */
+    }
+  
+    .logo {
+      border-radius: 50%;
+      margin-top:5px ;
+      margin-left: 30px;
+    }
+   
+    ul {
+      list-style-type: none;
+
+      margin-left: 80px;
+    }
+   header{li {
+      display: inline-block;
+      list-style-type: none;
+      background-color: #161D6f;
+      color: #fff;
+      padding: 2px 12px 2px 12px;
+      border-radius: 50px;
+      margin-top: 10px;
+      margin-right: 20px;
+      font-weight: bold;
+      
+    }}
+    .nav-link {
+      color: whitesmoke;
+    }
+    .search-container {
+      position: absolute;
+      right: 2px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 50px;
+      padding: 5px;
+      margin: 15px;
+      padding: 0;
+    }
+
+    .search-input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      width: 150px;
+      font-size: 16px;
+      border-radius: 25px;
+    }
+
+    .search-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0 10px;
+      margin: 0;
+    }
+
+    .search-icon {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .search-btn:hover .search-icon {
+      color: #007bff;
+    }
+    li:hover {
+      background-color: whitesmoke;
+      color: black;
+    }
+    
+    
+    .dropdown-item:hover {
+      color: rgb(36, 15, 226);
+
+    }
+pre {
+     color:whitesmoke;
+     font-size: 35px;
+     margin-top: 70px;
+     margin-left: 0;
+     padding-left: 0;
+     font-family: "Jacques Francois Shadow", serif;
+     font-weight: 400;
+     font-style: normal;
+     display: inline-block;
+     text-shadow: 1px 1px 2px rgba(34, 34, 32, 0.79);
+    }
+    @media (max-width: 768px) {
+      pre {
+        font-size: 25px;
+        text-align: center;
+      }
+      ul {
+        margin-left: 50px;
+      }
+    }
+    /* headertink */
+    .header-slideshow {
+            /* background-color: antiquewhite; */
+            position:absolute;
+            width: 100%;
+            height: 400px; /* adjust the height to your liking */
+            overflow: hidden;
+            float: left;
+            padding-right: 0px;
+            padding-left:670px;
+            padding-top: 50px;
+            bottom:5px;
+}
+
+        
+
+        .header-slideshow > div {
+            display: inline-block;
+            width: 29%;
+            height: 100%;
+            vertical-align:0;
+            padding-right:10px;
+        
+        }
+
+        .header-slideshow > div ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+          
+        }
+
+        .header-slideshow > div ul li {
+            display: none; /* hide all list items initially */
+            height: 100%;  
+   
+        }
+
+        .header-slideshow > div ul li.active {
+            display: block; /* show the active list item */
+            
+        }
+
+        .header-slideshow > div ul li img {
+            width: 100%;
+            margin: 0;
+            border-radius: 30px;
+            object-fit:cover; 
+          
+        }
+        .header-slideshow1 > div ul li img{
+            height: 33%;
+       
+        }
+        .header-slideshow2 > div ul li img{
+            height: 50%;
+        }
+        .header-slideshow3 > div ul li img{
+            height: 100%;
+        }         
+   /* sil */
+   .header{
+    text-align: center;
+    margin-top: 2vw ;
+    font-size: 20px;
+    font-weight: 700px;
+    font-family: 'Poppons', sans-serif;
+    display: block;
+    padding-top:15px;
+    padding-bottom:30px;
+   
+}
+.header h2{
+    padding-top:5px;
+    color: #f2c31b;   
+}
+section{
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    width:100%;
+    background: rgb(108,190,244);
+    background: linear-gradient(0deg, rgba(108,190,244,0.5348690082500507) 0%, rgba(228,207,74,0) 94%);
+
+}
+.cardsection{
+    max-width: 800px;
+    position: relative;
+
+  
+   
+}
+.cardsection i{
+    top: 50%; 
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 46px;
+    background:#D27C2C ;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    
+}
+.cardsection i:first-child{
+    left: -70px;
+}
+.cardsection i:last-child{
+    right: -65px;
+}
+.cardsection .carddisplay{
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+}
+.cardsection .carddisplay  img{
+    height: 350px;
+    width: 185px;
+    display: flex;
+    margin-left: 15px;
+    object-fit: cover; 
+    border-radius: 25px; 
+    overflow: hidden; 
+}
+.cardsection .carddisplay p{
+    font-family: 'Poppons', sans-serif; 
+    text-align: center;
+    font-size: 25px; 
+    
+}
+.carddisplay img :first-child{
+    margin-left: 0px;  
+}
+  /*footer  */
+  footer{
+                padding: 3vw;
+                display: flex;
+              
+            
+                background: rgba(108,190,244,0.5348690082500507);
+                background: linear-gradient(0deg, rgba(108,190,244,0.5348690082500507) 9%,rgba(108,190,244,0.5348690082500507) 73%);
+            }
+            footer div{
+                text-align: center;
+            }
+   
+</style>
+</head>
+<body>
+<header>
+      
+    <!--Navigation Bar-->
+    <!--Logo-->
+    <!-- -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <img src="/images/pjlogo.jpg" class="logo" alt="Destino" width="100px" height="100px">
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!--Home-->
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-house" style="padding-right: 10px;"></i>Home</a>
+            </li>
+            <!--dropdown menu-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Where to go
+              </a>
+              <ul class="dropdown-menu">
+                <a class="dropdown-item" href="#">Yangon Region</a>
+                <a class="dropdown-item" href="#">Mandalay Region</a>
+                <a class="dropdown-item" href="#">Saging Region</a>
+                <a class="dropdown-item" href="#">Bago Region</a>
+                <a class="dropdown-item" href="#">Ayeyarwady</a>
+
+
+<a class="dropdown-item" href="#">Tanintharyi Region</a>
+                <a class="dropdown-item" href="#">Magway Region</a>
+                <a class="dropdown-item" href="#">Kachin State</a>
+                <a class="dropdown-item" href="#">Kayin State</a>
+                <a class="dropdown-item" href="#">Kayar State</a>
+                <a class="dropdown-item" href="#">Chin State</a>
+                <a class="dropdown-item" href="#">Mon State</a>
+                <a class="dropdown-item" href="#">Shan State</a>
+                <a class="dropdown-item" href="#">Rakhine State</a>
+               
+               </ul>
+            <!--Events & Festival-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events & Festival</a>
+            </li>
+            <!--About Us-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <!--Search box-->
+            <form class="d-flex">
+              <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass" style="padding-left: 5px;"></i>
+                <input 
+                  type="text"
+                  placeholder="Search..."
+                  class="search-input"
+                />
+                <button class="search-btn" type="submit">
+                </button>
+              </div>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </address>
+  <!--Home page texts-->
+  <pre>
+    WELCOME TO  DESTINO 
+       TRAVEL OVER                 
+          AROUND BURMA      
+          
+  </pre></address></header>
+  <div class="heart"></div>
+    <address>
+        <div class="header-slideshow">
+            <div >
+                <ul class="header-slideshow1">
+                    <li><img src="/images/header1.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/header3.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/header4.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/header5.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/header6.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;"/></li>
+                    <!-- <li><img src="/.jpg" alt="no images" width="200px" height="250px" style="border-radius: 30px;"/></li> -->
+                </ul>
+            </div>
+            <div class="header-slideshow2">
+                <ul>
+                    <li><img src="/images/header2.1.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/header2.2.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/header2.4.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/header2.3.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/header2.5.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                    <li><img src="/images/header2.6.jpg" alt="no images" width="200px" height="300px" style="border-radius: 30px;"/></li>
+                </ul>
+            </div>
+            <div class="header-slideshow3">
+                <ul>
+                    <li><img src="/images/header3.1.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/header3.2.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/header3.3.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/header3.4.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/header3.5.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                    <li><img src="/images/header3.6.jpg" alt="no images" width="200px" height="350px" style="border-radius: 30px;" /></li>
+                </ul>
+            </div>
+        </div>
+    
+    
+    <script>
+        const slideshows = document.querySelectorAll('.header-slideshow > div ul');
+        const slides = Array.from(slideshows).map(slideshow => slideshow.children);
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides.forEach((slide, index) => {
+                Array.from(slide).forEach((img, imgIndex) => {
+                    img.classList.remove('active');
+                });
+                slide[currentSlide].classList.add('active');
+            });
+            currentSlide = (currentSlide + 1) % slides[0].length;
+            setTimeout(nextSlide, 2000);
+        }
+
+        // Add the active class to the first slide initially for all slideshows
+        slides.forEach(slide => slide[0].classList.add('active'));
+        nextSlide();
+    </script>
+
+   
+
+
+    <div class="header">
+        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >SOME ATTRACTIVE DESTINATIONS</h1>
+        <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">In Myanmar</h2>
+        </div>
+              <section>
+              <div class="cardsection"> 
+                <i class="card arrow material-symbols-rounded">arrow_back_ios</i>
+              <div class="carddisplay">
+              <a hred=""><img src="/images/header2.5.jpg" alt="no image"><p>Mount Victoria</p></a>
+              <a hred=""><img src="/images/photo_2024-09-17_21-42-36.jpg" alt="no image"><p>Mintat</p></a>
+              <a hred=""><img src="/images/bagansection.jpg" alt="no image"><p>Bagan</p></a>
+              <a hred=""><img src="/images/photo_2024-09-17_21-42-46.jpg" alt="no image"><p>Hpa an</p></a>
+              <a hred=""><img src="/images/photo_2024-09-17_21-42-38.jpg" alt="no image"><p>Yangon</p></a>
+              <a hred=""><img src="/images/photo_2024-09-17_21-42-46.jpg" alt="no image"><p>Hpaan</p></a>
+              <a hred=""><img src="/images/header2.6.jpg" alt="no image"><p>Inle lake</p></a>
+              <a hred=""><img src="/images/header2.4.jpg" alt="no image"><p>Inle lake</p></a>
+              <a hred=""><img src="/images/header2.jpg" alt="no image"><p>Inle lake</p></a>
+              <a hred=""><img src="/images/header3.4.jpg" alt="no image"><p>Inle lake</p></a> 
+              
+              
+              </div>
+              <i class="material-symbols-rounded"> arrow_forward_ios</i>
+        </div></section>
+        <!-- footerzlhtoo -->
+        
+        <footer>
+                <div>
+                    <span class="material-symbols-outlined">
+                    thumb_up
+                    </span>
+                
+                    <p>Brazil is blessed with an extensive coastline full of sun and beach destinations that attract tourists from all over the world.</p> 
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        home_work
+                        </span>
+                    <p>Brazil is blessed with an extensive coastline full of sun and beach destinations that attract tourists from all over the world.</p> 
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        favorite
+                        </span>
+                    <p>Brazil is blessed with an extensive coastline full of sun and beach destinations that attract tourists from all over the world.</p> 
+                </div>
+        </footer>
+  
+  </body>
+</html>
